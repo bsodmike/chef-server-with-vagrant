@@ -188,3 +188,4 @@ DEPENDENCIES
   berkshelf
   chef (~> 10.12.0)
   knife-solo
+  pry

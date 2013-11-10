@@ -1,0 +1,19 @@
+{
+  "name": "chefserver",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The base role for Chef Server",
+  "default_attributes": {
+    "chef-server": {
+      "version": "latest",
+      "configuration": {
+        "chef-server-webui": {
+          "enable": true
+        }
+      }
+    }
+  },
+  "run_list": [
+    "recipe[chef-server::default]"
+  ]
+}
