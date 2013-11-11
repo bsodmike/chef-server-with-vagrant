@@ -1,5 +1,6 @@
 {
   "run_list": [
-    "role[chefserver]"
+    "role[base]",
+    "role[vagrant_chefserver]"
   ]
 }

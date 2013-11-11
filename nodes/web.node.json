@@ -2,6 +2,7 @@
   "chef_type": "node",
   "json_class": "Chef::Node",
   "run_list": [
-    "role[base]"
+    "role[base]",
+    "role[node_base]"
   ]
 }

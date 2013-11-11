@@ -1,6 +1,9 @@
 {
-  "sha": "97843d4e7d9b03fb24605f3c89c7b5efc38d44e2",
+  "sha": "25e33e02ddc0e473307aff1141d6cb6996908f3e",
   "sources": {
+    "chef-client": {
+      "locked_version": "3.1.0"
+    },
     "chef-server": {
       "locked_version": "2.0.0",
       "git": "git://github.com/opscode-cookbooks/chef-server.git",
@@ -11,6 +14,19 @@
     },
     "omnibus_updater": {
       "locked_version": "0.2.4"
+    },
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "vim": {
+      "locked_version": "1.0.2"
+    },
+    "logrotate": {
+      "locked_version": "1.4.0"
+    },
+    "cron": {
+      "locked_version": "1.2.8",
+      "constraint": ">= 1.2.0"
     }
   }
 }

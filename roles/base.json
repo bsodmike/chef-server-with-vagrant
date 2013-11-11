@@ -2,12 +2,15 @@
   "name": "base",
   "chef_type": "role",
   "json_class": "Chef::Role",
-  "description": "The base role for all nodes",
+  "description": "The base role for all.",
   //"default_attributes": {
 
   //},
   "run_list": [
+    "recipe[apt]",
     "recipe[build-essential]",
-    "recipe[omnibus_updater]"
+    "recipe[omnibus_updater]",
+    "recipe[vim]",
+    "recipe[logrotate]"
   ]
 }

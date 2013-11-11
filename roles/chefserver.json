@@ -2,21 +2,21 @@
   "name": "chefserver",
   "chef_type": "role",
   "json_class": "Chef::Role",
-  "description": "The base role for Chef Server",
+  "description": "The base role for Chef Server.",
   "default_attributes": {
     "chef-server": {
       "version": "latest",
-      "api_fqdn": "10.33.33.33",
+      "api_fqdn": "10.33.33.40",
       "configuration": {
         "chef-server-webui": {
           "enable": true
         },
         "nginx": {
-          "url": "http://10.33.33.33",
+          "url": "http://10.33.33.40",
           "enable_non_ssl": true
         },
         "bookshelf": {
-          "url": "http://10.33.33.33"
+          "url": "http://10.33.33.40"
         }
       }
     }
