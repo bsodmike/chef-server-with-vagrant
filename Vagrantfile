@@ -41,6 +41,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
+  config.vm.define :chef_client do |chef_client_config|
+    chef_client_config.vm.box = "precise64"
+    chef_client_config.vm.network :private_network, :ip => "10.33.33.50"
+  end
+
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   # config.vm.box_url = "http://domain.com/path/to/above.box"
