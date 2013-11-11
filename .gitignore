@@ -1,3 +1,6 @@
+# `knife solo cook` destroys its contents, hence all cookbooks are stored in `site-cookbooks/`.
+/cookbooks
+
 # Vim
 *.swp
 *.swo

@@ -1,5 +1,5 @@
 {
-  "sha": "6d115d4aadb3d6e4254c568635f702df3c69b707",
+  "sha": "97843d4e7d9b03fb24605f3c89c7b5efc38d44e2",
   "sources": {
     "chef-server": {
       "locked_version": "2.0.0",
@@ -8,6 +8,9 @@
     },
     "build-essential": {
       "locked_version": "1.4.2"
+    },
+    "omnibus_updater": {
+      "locked_version": "0.2.4"
     }
   }
 }

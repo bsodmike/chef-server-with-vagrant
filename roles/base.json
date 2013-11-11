@@ -1,0 +1,13 @@
+{
+  "name": "base",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The base role for all nodes",
+  //"default_attributes": {
+
+  //},
+  "run_list": [
+    "recipe[build-essential]",
+    "recipe[omnibus_updater]"
+  ]
+}
