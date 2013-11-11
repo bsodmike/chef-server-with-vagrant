@@ -34,7 +34,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # which `.chef/knife.rb` is configured for.  Typically, this would be for your
   # `chef` instance, as detailed above.
   #
-  #     knife bootstrap 10.33.33.50 -x vagrant -P vagrant --node-name web.node
+  #     knife bootstrap 10.33.33.50 -x vagrant -P vagrant --sudo --node-name web.node
 
   config.vm.define :chef_client do |chef_client_config|
     chef_client_config.vm.box = "precise64"
