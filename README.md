@@ -18,11 +18,9 @@ Then, simply do
 
 This will spawn three virtual instances
 
-* chef              # Visit http://10.33.33.33, this is our test chef
-server
-* chef_client       # Bootstrap your first node @ 10.33.33.50
-* chefserver        # Use Knife-solo to bootstrap a chef server
-@ 10.33.33.40; this is how you would bootstrap a chef server on a VPS!
+    * chef              # Visit http://10.33.33.33, this is our test chef server
+    * chef_client       # Bootstrap your first node @ 10.33.33.50
+    * chefserver        # Use Knife-solo to bootstrap a chef server @ 10.33.33.40; this is how you would bootstrap a chef server on a VPS!
 
 Note that HTTPS has been disabled on these chef servers to allow your
 Knife to work.
@@ -181,9 +179,11 @@ v5AmrjvLPV7rBLSb10cj2i7TaeNGzQhxKBQEZOx2PotakjY5UKzi3qoUrlR+qcPY
 validator:  false
 
 # Updating a node's run_list via knife
--> % knife node run_list add web.node "role[base]"
+-> % knife node run_list add web.node "role[base]", "role[node_base]"
 web.node:
-  run_list: role[base]
+  run_list:
+    role[base]
+    role[node_base]
 ```
 
 ## Bootstrapping a Chef server with Knife-solo
